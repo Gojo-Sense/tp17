@@ -102,4 +102,5 @@ console.log(`Taille de 'data.xml'  : ${xmlFileSize} octets`);
 console.log(`Taille de 'data.proto': ${protoFileSize} octets`);
 
 const gain = ((jsonFileSize - protoFileSize) / jsonFileSize * 100).toFixed(2);
-console.log(`\nProtobuf est environ ${gain}% plus léger que JSON sur cet exemple.`);
+console.log(`\nProtobuf est environ ${gain}% plus léger que JSON sur cet exemple.`);// Update to remove commit comment
+// New commit

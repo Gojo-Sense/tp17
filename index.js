@@ -4,7 +4,7 @@ const protobuf = require('protobufjs');
 
 // Charger la définition Protobuf depuis employee.proto
 const root = protobuf.loadSync('employee.proto');
-const EmployeeList = root.lookupType('CompanyEmployees');
+const EmployeeList = root.lookupType('Employees');
 
 // Construire la liste d'employés
 const employees = [];
@@ -27,7 +27,7 @@ employees.push({
   salary: 23000
 });
 
-// Objet racine compatible avec message CompanyEmployees
+// Objet racine compatible avec message Employees
 let jsonObject = { employee: employees };
 
 // ---------- JSON ----------
